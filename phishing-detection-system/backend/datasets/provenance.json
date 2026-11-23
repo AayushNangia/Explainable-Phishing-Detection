@@ -1,0 +1,28 @@
+{
+  "urls": {
+    "file": "urls.csv",
+    "rows": 80000,
+    "phishing": 40000,
+    "legitimate": 40000,
+    "phishing_source": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-links-ACTIVE.txt",
+    "legitimate_source": "https://raw.githubusercontent.com/faizann24/Using-machine-learning-to-detect-malicious-URLs/master/data/data.csv",
+    "scheme_removed_from_all_urls": true,
+    "sampling": "random sample up to 40000 per class (seed 42)",
+    "phishing_unique": 719481,
+    "legitimate_unique": 344799,
+    "label_conflicts_removed": 1,
+    "limitation": "Legitimate and phishing URLs come from different collections. Models can partly learn collection-specific artefacts, so test metrics are optimistic compared with real-world traffic.",
+    "prepared_at": "2026-11-11T19:14:50.267218+00:00"
+  },
+  "emails": {
+    "file": "emails.csv",
+    "rows": 29792,
+    "positive_class": 14283,
+    "negative_class": 15509,
+    "source": "https://raw.githubusercontent.com/MWiechmann/enron_spam_data/master/enron_spam_data.zip",
+    "positive_label_meaning": "'spam' class of Enron-Spam (spam / unsolicited scam-style mail, NOT curated phishing)",
+    "duplicates_removed": 3370,
+    "limitation": "Enron-Spam is a spam/ham corpus. The positive class is spam/scam mail, not strictly phishing. Train on a phishing corpus (Nazario/CEAS-08) for a phishing-specific model.",
+    "prepared_at": "2026-11-11T19:14:52.998463+00:00"
+  }
+}
